@@ -6,6 +6,7 @@ Solutions to Programming Challenges on :
 * HackerRank
 * Project Euler
 * SPOJ
+* Kaggle
 
 
 To run the code `$ python <file_name>.py`
