@@ -3,19 +3,22 @@
  */
 package com.kartik.programs;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
  * @author Kartik Kannapur
  *
  */
-public class TEST {
+public class Practice_02 {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		// Given a string , print "Yes" if it is a palindrome, print "No" otherwise. 
+		//The strings will consist lower case english letters only. The strings will have at most 50 characters.
+		
+		
 		Scanner sc=new Scanner(System.in);
         String inputString = sc.nextLine();
         
@@ -25,16 +28,12 @@ public class TEST {
 			reversedString += inputString.charAt(i);
 		}
         
-//        inputString.
-        
         if (inputString.equals(reversedString)) {
 			System.out.println("Yes");
 		}
         else {
 			System.out.println("No");
-		}
-        
-
+        }
 	}
+
 }
- 
