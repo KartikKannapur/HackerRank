@@ -34,8 +34,6 @@ class Solution(object):
                 if var != i:
                     return [i, var]
             dict_result[i] = nums[i]
- 
-
 TIME TAKEN - 516 ms
 class Solution(object):
     def twoSum(self, nums, target):
@@ -51,4 +49,21 @@ class Solution(object):
                 if dict_result[(target - nums[i])] != i:
                     return [dict_result[(target - nums[i])], i]
             dict_result[nums[i]] = i
-      
+
+
+
+TIME TAKEN - 365 ms
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        
+        dict_result = {}
+        for i in range(0, len(nums)):
+            var = (target - nums[i])
+            if var in dict_result:
+                return [dict_result[var], i]
+            dict_result[nums[i]] = i
